@@ -49,7 +49,6 @@ typedef void (^SelectionBlock)(NSString *);
 
 - (void)setTitle:(NSString *)title forState:(UIControlState)state
 {
-    title = [title stringByAppendingString:@" \u25BC"]; //Unicode - Down arrow
     [super setTitle:title forState:state];
     [self sizeToFit];
 }
